@@ -12,15 +12,15 @@ import streamlit as st
 
 # ======== CONSTANTS (edit here if пути другие) ========
 # Background image (applies to all pages)
-BG_IMAGE_PATH   = "main/COMETS_2025_bottom_right.png"
+BG_IMAGE_PATH   = "COMETS_2025_bottom_right.png"
 
 # Skin (ResNet50, 2 classes)
-SKIN_CKPT_PATH  = "main/true.pth"
+SKIN_CKPT_PATH  = "true.pth"
 SKIN_CLASSES    = ["benign", "malignant"]
 SKIN_VAL_DIR    = ""  # e.g. "data/skin/val"
 
 # Intel (ResNet18, 6 classes)
-INTEL_CKPT_PATH = "main/resnet18_full_model1.pth"
+INTEL_CKPT_PATH = "resnet18_full_model1.pth"
 INTEL_CLASSES   = ["buildings","forest","glacier","mountain","sea","street"]
 INTEL_VAL_DIR   = ""  # e.g. "/Users/.../archive/seg_test/seg_test"
 
