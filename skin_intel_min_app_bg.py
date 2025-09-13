@@ -11,7 +11,6 @@ import torch.nn as nn
 from torchvision import models, transforms, datasets
 
 import matplotlib.pyplot as plt
-import seaborn as sns
 import streamlit as st
 
 # ======== CONSTANTS (edit here if пути другие) ========
