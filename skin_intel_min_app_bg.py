@@ -5,25 +5,22 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 import requests
-
 import torch
 import torch.nn as nn
 from torchvision import models, transforms, datasets
-
-import matplotlib.pyplot as plt
 import streamlit as st
 
 # ======== CONSTANTS (edit here if пути другие) ========
 # Background image (applies to all pages)
-BG_IMAGE_PATH   = "/Users/maratalekberov/Desktop/Скрины/Screenshot 2025-09-12 at 17.30.48.png"
+BG_IMAGE_PATH   = "main/COMETS_2025_bottom_right.png"
 
 # Skin (ResNet50, 2 classes)
-SKIN_CKPT_PATH  = "/Users/maratalekberov/Downloads/true.pth"
+SKIN_CKPT_PATH  = "main/true.pth"
 SKIN_CLASSES    = ["benign", "malignant"]
 SKIN_VAL_DIR    = ""  # e.g. "data/skin/val"
 
 # Intel (ResNet18, 6 classes)
-INTEL_CKPT_PATH = "resnet18_full_model1.pth"
+INTEL_CKPT_PATH = "main/resnet18_full_model1.pth"
 INTEL_CLASSES   = ["buildings","forest","glacier","mountain","sea","street"]
 INTEL_VAL_DIR   = ""  # e.g. "/Users/.../archive/seg_test/seg_test"
 
